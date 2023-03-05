@@ -1,0 +1,61 @@
+{% load static %}
+<div class="container">
+    <div class="row my-5 gy-4">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+    <h5 class="text-muted">About Us</h5>
+    <hr>
+    <h5 class="text-muted">
+    Waxad Naga helasysaa Django course
+    </h5>
+    <p>
+    Lorem ipsum dolor sit amet consectetur 
+    adipisicing elit. Nobis dolor illum praesentium, voluptatibus 
+    eaque molestias provident impedit commodi voluptate non 
+    corrupti sit omnis velit ducimus nulla eos ullam tempore qui.
+    </p>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+        <h5 class="text-muted">Trending Slider</h5>
+        <hr>
+        <div id="carouselExampleIndicators" class="carousel 
+        slide footer" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+        class="active" aria-current="true" aria-label="Slide 
+        1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{% static 'images/js.png'%}" alt=" js image" class="d-block w-80">    
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/Hadraawi.jfif'%}" alt="Hadraawi" class="d-block w-80" >
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/django.png'%}" alt="Hadraawi" class="d-block w-80" >
+            </div>
+        </div>
+        <button class="carousel-control-prev"
+        type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"
+        aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next"
+        type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon"
+        aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+        </div>
+        <hr>
+        <div class="modal-footer float-right mt-5 text-center">
+        Abadir Hassan
+        </div>
+        </div>
+        </div>
+        

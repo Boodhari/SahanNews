@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-md navbar-dark  bg-dark
+justify-content-center my-3 py-3">
+<div class="container">
+  <a href="#" class="navbar-brand fw-bolder">
+      <img src="sahanb.jpg" width="80px" 
+      class="d-inline-block" alt="">  SAHAN NEWS
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+  data-bs-target="#Ciwaano" aria-controls="Ciwaano" aria-expanded="false"
+  aria-label="Toggle navigation">
+ <span class="navbar-toggler-icon "> </span>
+</button>
+<div class="collapse navbar-collapse" id="Ciwaano">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a href="#" class="nav-link active text-white fw-bolder">HOME</a>
+        </li>
+        {% if user.is_authenticated %}
+        <li class="nav-item">
+            <a href="#somali" class="nav-link active text-white fw-bolder">SPORTS</a>
+        </li>
+        <li class="nav-item">
+            <a href="#s" class="nav-link active text-white fw-bolder">Siyaasada</a>
+        </li>
+        <li class="nav-item">
+            <a href="#s" class="nav-link active text-white fw-bolder">Categories</a>
+        </li>
+        <li class="nav-item">
+            <a href="#history" class="nav-link active text-white fw-bolder">Add New Post</a>
+        </li>
+        {%endif%}
+        {% if user.is_authenticated %}
+        <li class="nav-item">
+            <a href="" class="nav-link active text-white fw-bolder">Welcome :{{user.username}}</a>
+        </li>
+        <li class="nav-item">
+            <a href="{% url 'logout'%}" class="nav-link active text-white fw-bolder">Logout</a>
+        </li>
+        {%else %}
+        <li class="nav-item">
+            <a href="{% url 'login'%}" class="nav-link active text-white fw-bolder">Login</a>
+        </li>
+        {% endif%}
+      
+       
+    </ul>
+</div>
+  
+</div>
+</nav>
